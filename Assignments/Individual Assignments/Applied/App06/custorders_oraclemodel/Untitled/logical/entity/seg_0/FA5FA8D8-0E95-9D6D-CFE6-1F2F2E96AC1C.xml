@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA5FA8D8-0E95-9D6D-CFE6-1F2F2E96AC1C" name="ORDERLINE">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 06:53:50 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ol_id" id="86D5A770-2DB6-46B1-0B5C-EA14170C0340">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:13:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[orderline id]]></commentInRDBMS>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order_no" id="514D2F38-359E-ABDC-55AF-2EABD56F4DB0">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 06:55:02 UTC</createdTime>
+<generatorID>8F0937AE-A1D1-B24F-56C4-42F38A094AC9</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<referedAttribute>AA422BEE-E188-C98F-1DA4-48D64A452684</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_no" id="F06B219C-7D4E-3B6C-A280-32BE08C7BD93">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:05:39 UTC</createdTime>
+<generatorID>0A6EEA6D-7C93-C511-6CDF-33586C2217E2</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<referedAttribute>1CB5DC38-4744-F2F3-BB02-F3B00B0C0C4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_qtyordered" id="78C56CF2-97CE-94B9-F8B1-F58FEB2FF1C3">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 06:54:11 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_lineprice" id="975B06FB-423D-54D0-7460-96A467A55B0E">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 06:54:33 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B10F356-8CF6-F933-23FB-31709CB7B194" name="ORDERLINE_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 06:56:24 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>514D2F38-359E-ABDC-55AF-2EABD56F4DB0</attributeRef>
+<attributeRef>F06B219C-7D4E-3B6C-A280-32BE08C7BD93</attributeRef>
+<attributeRef>86D5A770-2DB6-46B1-0B5C-EA14170C0340</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A5B40FC7-5102-37F3-C39F-4A8AD3975912" name="orderline_nk">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:16:15 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>86D5A770-2DB6-46B1-0B5C-EA14170C0340</newElementsIDs>
+<usedAttributes>
+<attributeRef>86D5A770-2DB6-46B1-0B5C-EA14170C0340</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

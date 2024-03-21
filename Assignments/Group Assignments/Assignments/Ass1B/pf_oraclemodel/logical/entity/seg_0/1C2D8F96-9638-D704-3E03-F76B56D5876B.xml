@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C2D8F96-9638-D704-3E03-F76B56D5876B" name="SPECIALISATION">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:12:21 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="specialisation_id" id="336CE083-6102-A0D4-BADF-330787397EC6">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:12:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialisation id]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sepcialisation_name" id="405C3310-05F7-CC26-C3C7-66FC66D9A01A">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:13:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialisation name]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="B89F5BED-2DDF-F536-75FF-B67D13472917">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:15:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>C9FDAE4F-0FCC-CF07-F494-BD130D38D47F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<referedAttribute>22A1A66F-A247-2050-DED4-4E5C3536EB98</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71D14AC0-1E7A-A368-9C74-EBF51C2D529B" name="SPECIALIZATION PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:13:19 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>336CE083-6102-A0D4-BADF-330787397EC6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

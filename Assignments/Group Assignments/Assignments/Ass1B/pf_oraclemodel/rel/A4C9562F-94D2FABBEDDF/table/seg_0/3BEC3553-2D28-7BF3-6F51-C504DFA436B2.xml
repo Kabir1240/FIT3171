@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BEC3553-2D28-7BF3-6F51-C504DFA436B2" name="PET">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>9BA0C3D2-5ED8-E68E-0C9B-5E6EF8F0912B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pet_id" id="D68E18E6-C040-C6BE-4DF3-D5EE304A0704">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique id of pet]]></commentInRDBMS>
+<generatorID>DDBF045C-BE1A-7DA2-B765-4FE4AE68594E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_name" id="B4C4C2C1-6965-AF37-1D19-3DB67FF50A29">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of pet]]></commentInRDBMS>
+<generatorID>E5045507-8672-6EF8-FA78-3941D257AAAC</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_type" id="A8555F27-BB96-F5EA-DF4B-71CBC0B69DCD">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of pet]]></commentInRDBMS>
+<generatorID>33A1C174-E4F3-35C0-E15B-25FDD3AFF66F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_birth_year" id="C508C5C3-2CEB-F3E3-4E40-C3E24754C20D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet date of birth]]></commentInRDBMS>
+<generatorID>ABF851D8-9A2F-98E3-CDF0-EB447A9B8708</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_id" id="6FCD1C1A-1883-E116-835D-3BBAB9CF9EB3">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique id of owner]]></commentInRDBMS>
+<generatorID>216CCA62-9F53-9B64-7AC9-674BB0C7F782</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E28895F-77E1-4C72-521B-6F8A6154EE2F" referredColumn="2C102B27-EC75-50E6-9E4E-E9B4D9C39D72"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62867C3B-A15E-0BD9-DF19-19B76426E6C4" name="Pet_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>E7E8A0FE-8195-F6B9-55D9-42D4B124F550</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D68E18E6-C040-C6BE-4DF3-D5EE304A0704"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ACB8F73-8D1F-1764-1850-D05B8C86C7C7" name="pet_owner">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>C516F5D5-D71A-ACC2-6424-515BEAFF6580</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FCD1C1A-1883-E116-835D-3BBAB9CF9EB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

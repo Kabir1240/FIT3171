@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9390AC0-E4C5-2F6A-1F82-6BFA81C44517" name="TRAINING">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>8863BB9F-4F16-2D72-274D-B101DBE19901</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tr_id" id="2DCECD14-2973-0F83-3F34-6A84D754D36D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course  id]]></commentInRDBMS>
+<generatorID>56ADD2E9-A663-E262-6E15-56E09FAE5E39</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tr_name" id="3CC65FC7-DA36-A722-B025-177C41D16E40">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course name]]></commentInRDBMS>
+<generatorID>B4419176-6E23-FD68-E6D5-57A8D14C7EE0</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tr_duration" id="091CABBB-C0A6-DDEE-BBF8-120BC99288AC">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course  duration (in hh:mm)]]></commentInRDBMS>
+<generatorID>3C12E484-EC33-821A-F1E8-BBEDBCF731D9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tr_date_time" id="638AE299-BE9D-FC53-40C4-36FE780B7FCF">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course start date and time]]></commentInRDBMS>
+<generatorID>56FCE3DB-1395-3814-F37F-0DBE641EAC3A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_id" id="ADBF8546-989C-6B8F-331B-3A84B25A4B72">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id, primary key]]></commentInRDBMS>
+<generatorID>02798113-1854-A700-B486-385223BF7334</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="130984ED-6694-E7AD-34AD-E7E991CEF5CB" referredColumn="F43264F2-8DF3-C403-E4C8-1482647B9064"/>
+</associations>
+</Column>
+<Column name="vet_id" id="FE5391D8-AC7D-ABFE-6362-FC71AE5DEAEA">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>445CAE28-A092-9E88-942E-E633746ABF00</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="096FFE73-22C9-94B4-86BE-303B73FCCE05" referredColumn="A976B030-0DDE-B80A-4597-0100110B355B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="459BF7A0-04EF-6943-903B-BEC21BF58149" name="TRAINING_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>179CEC04-F4F7-9B4E-3612-B2697EDE5402</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DCECD14-2973-0F83-3F34-6A84D754D36D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2ED7B617-535C-EC39-B5E6-CAD42F4845B2" name="clinic_training">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>6CB5D565-A89A-EE1E-722E-6866A3ABBEF6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADBF8546-989C-6B8F-331B-3A84B25A4B72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06F9A349-E1E1-CAF5-3595-F58894DD8C5D" name="vet_training">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>4EA65AD2-7C6C-4480-0642-D565C9E81658</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE5391D8-AC7D-ABFE-6362-FC71AE5DEAEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

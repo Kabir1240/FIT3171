@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5501FF9A-9DE4-566D-5AA4-708904CBE8AF" name="VET_TRAINING">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:08:31 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tr_id" id="A1220451-D2F0-C777-EF3B-9CF6E1EB9791">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:38:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course  id]]></commentInRDBMS>
+<generatorID>4459D9DC-94B4-0BA2-209F-8EC0C5A4E2DC</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<referedAttribute>56ADD2E9-A663-E262-6E15-56E09FAE5E39</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="C401BBD7-F728-0B61-99AF-E64ADE63D9DB">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:34:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>5FD28E7E-826A-902A-7D87-D39D466CFF66</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<referedAttribute>22A1A66F-A247-2050-DED4-4E5C3536EB98</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_tr_completed" id="5EB4AAC4-A1E4-8114-2303-5AC1D8596E7A">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:13:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[if vet has completed training course or not]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<constraintName>chk_vet_tr_completed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="NO"/>
+<valueDef value="Y" description="YES"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_tr_expiry" id="93A516FD-E772-9D93-29FC-5C4A06A93C8E">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:18:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[expiration date of training course certification]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0903085B-8289-80B6-0A25-0C51D291827F" name="VET_TRAINING PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:39:11 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1220451-D2F0-C777-EF3B-9CF6E1EB9791</attributeRef>
+<attributeRef>C401BBD7-F728-0B61-99AF-E64ADE63D9DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

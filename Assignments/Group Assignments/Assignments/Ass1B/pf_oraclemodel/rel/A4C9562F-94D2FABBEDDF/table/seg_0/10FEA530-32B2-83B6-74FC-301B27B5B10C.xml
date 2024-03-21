@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10FEA530-32B2-83B6-74FC-301B27B5B10C" name="SPECIALISATION">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>1C2D8F96-9638-D704-3E03-F76B56D5876B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="specialisation_id" id="88A87250-7253-E7BE-6E3A-98BBEAC934D3">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialisation id]]></commentInRDBMS>
+<generatorID>336CE083-6102-A0D4-BADF-330787397EC6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sepcialisation_name" id="141D0E05-ADC1-F7E9-28D6-4550F3487C11">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialisation name]]></commentInRDBMS>
+<generatorID>405C3310-05F7-CC26-C3C7-66FC66D9A01A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_id" id="2016BB41-3EB9-B092-8361-6175B33E9B03">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>B89F5BED-2DDF-F536-75FF-B67D13472917</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64E4F80F-271F-3362-2167-3FD9682B73C6" referredColumn="A976B030-0DDE-B80A-4597-0100110B355B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21A86963-0465-CA9C-50D7-C3B9CA3BE37B" name="SPECIALIZATION_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>71D14AC0-1E7A-A368-9C74-EBF51C2D529B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88A87250-7253-E7BE-6E3A-98BBEAC934D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85BFCA69-F34C-54A0-B339-F0C3A4150448" name="SPECIALISATION__IDX">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C9FDAE4F-0FCC-CF07-F494-BD130D38D47F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2016BB41-3EB9-B092-8361-6175B33E9B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96EDC05F-4D52-326D-A8BE-CB73DB6FF5BE" name="vet_specialisation">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>C9FDAE4F-0FCC-CF07-F494-BD130D38D47F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2016BB41-3EB9-B092-8361-6175B33E9B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

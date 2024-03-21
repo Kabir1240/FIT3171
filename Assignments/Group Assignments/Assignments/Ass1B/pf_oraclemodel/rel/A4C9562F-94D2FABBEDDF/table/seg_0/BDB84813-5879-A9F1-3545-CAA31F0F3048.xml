@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDB84813-5879-A9F1-3545-CAA31F0F3048" name="CLINIC">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>CE541895-8381-09D4-F6CB-CE3011FC3C23</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="clinic_id" id="DC1C1285-A701-4293-C307-7A769807796D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id, primary key]]></commentInRDBMS>
+<generatorID>B8BA49FC-EC9A-EDF9-D195-08623CEBB2E6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_name" id="77FA00C2-793C-E2AE-2DA8-5AB3D17E5FCE">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic name]]></commentInRDBMS>
+<generatorID>EBA61DF7-B0F0-5BC3-85B9-99B07F357A0C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_address" id="E5EA200D-3783-ADA0-3124-57B8E4BC825C">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic address]]></commentInRDBMS>
+<generatorID>2CFF1301-9C20-4DC2-9AE2-4ECD67705B6D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_contact" id="30BBD33D-02FD-95B5-DDB1-DCA3595A3D57">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic contact]]></commentInRDBMS>
+<generatorID>6E3E01AE-B673-6C67-CB52-F281CB2C683E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_head" id="3CF9FB79-18BF-7F3A-3846-E2186DF540EA">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>73DCA83B-436A-09C7-6896-11456FEB867D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C069A5A-6265-AB63-14F0-21224DC3E7A1" referredColumn="39C27E71-B923-92B2-A424-55087CAC4615"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAE7BE0E-F7FA-B897-6F7E-369FA4BBBB11" name="CLINIC_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>9191A12E-6C15-BA75-2D4E-93900F021953</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC1C1285-A701-4293-C307-7A769807796D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF1B7EE0-12C3-E10A-6E59-F15E34D4C8BF" name="CLINIC__IDX">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>727A3C40-2457-F2D0-07C7-B16611EB4B1B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3CF9FB79-18BF-7F3A-3846-E2186DF540EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D7281CE-DE84-0C7A-0E29-CF4FFCCA73A8" name="vet_clinic">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>727A3C40-2457-F2D0-07C7-B16611EB4B1B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CF9FB79-18BF-7F3A-3846-E2186DF540EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

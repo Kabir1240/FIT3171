@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9B571A9-FA56-CC61-8491-3F8E73312733" name="VET_TRAINING">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>5501FF9A-9DE4-566D-5AA4-708904CBE8AF</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tr_id" id="873B53BC-D5FA-D932-A827-F8C3D25BEEAA">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course  id]]></commentInRDBMS>
+<generatorID>A1220451-D2F0-C777-EF3B-9CF6E1EB9791</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93B2F7E3-90EC-388C-A76A-504454671F15" referredColumn="2DCECD14-2973-0F83-3F34-6A84D754D36D"/>
+</associations>
+</Column>
+<Column name="vet_id" id="FC1A255A-29D2-754A-D861-523AC0C1220D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>C401BBD7-F728-0B61-99AF-E64ADE63D9DB</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D12FABF6-C303-8C12-F4C6-3011042781F2" referredColumn="A976B030-0DDE-B80A-4597-0100110B355B"/>
+</associations>
+</Column>
+<Column name="vet_tr_completed" id="49338684-0F80-2792-33CD-4F3FBD5A9A61">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[if vet has completed training course or not]]></commentInRDBMS>
+<generatorID>5EB4AAC4-A1E4-8114-2303-5AC1D8596E7A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<constraintName>chk_vet_tr_completed</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="NO"/>
+<valueDef value="Y" description="YES"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_tr_expiry" id="40CF73E1-A8BE-3DF2-F8D3-E87215DAC09B">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[expiration date of training course certification]]></commentInRDBMS>
+<generatorID>93A516FD-E772-9D93-29FC-5C4A06A93C8E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE70FCA1-EFF7-C683-D9DB-9DCFC4D8B281" name="VET_TRAINING_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>0903085B-8289-80B6-0A25-0C51D291827F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873B53BC-D5FA-D932-A827-F8C3D25BEEAA"/>
+<colUsage columnID="FC1A255A-29D2-754A-D861-523AC0C1220D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EB975F2-7C46-AF97-FA3E-91272C587E5A" name="training_vet_training">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>4459D9DC-94B4-0BA2-209F-8EC0C5A4E2DC</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873B53BC-D5FA-D932-A827-F8C3D25BEEAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7A84CAB-BDF0-45A6-A88B-68BA297C8BE9" name="vet_training_vet">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>5FD28E7E-826A-902A-7D87-D39D466CFF66</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC1A255A-29D2-754A-D861-523AC0C1220D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

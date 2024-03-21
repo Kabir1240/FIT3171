@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10EABB96-7237-6E0B-4109-0EB7FDF8E944" name="PRESCRIPTION">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>AB87542E-3B85-5BE3-4BA0-7323EA380B4C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="visit_id" id="5CFEBC29-9135-2C54-96A3-1D9ABE0EAE7E">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for visit]]></commentInRDBMS>
+<generatorID>30850117-740B-6394-BB95-6B2957CFC10E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B855F61C-1C81-66D3-2153-3DE1C64B288D" referredColumn="F7F47769-263B-2007-DD63-A33A03052A34"/>
+</associations>
+</Column>
+<Column name="drug_id" id="E3175A8E-F46D-7D9D-1C22-26D8840B9F2D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<generatorID>BD612355-E103-84BC-D726-5B76241E1C69</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8020CFF0-2D07-563E-D185-D11D8F43D39F" referredColumn="26BDD64F-56FC-88D2-AA77-C6FBE8C98C3B"/>
+</associations>
+</Column>
+<Column name="prescrip_freq" id="82024346-F2BA-28CA-E577-A68C62876AA3">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[frequency of drug prescription]]></commentInRDBMS>
+<generatorID>AAD8A3CA-18E4-2D66-FC26-53663E704424</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prescrip_dose" id="0992DDBC-7CC1-43CD-A6C4-F6F806B3CD8B">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug prescription dose in g]]></commentInRDBMS>
+<generatorID>9B0FB619-E9A0-AD8F-93CF-BEBEAD594AEE</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prescrip_qty_supplied" id="334E5877-0002-D0C2-7531-0C02F844027F">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity supplied of drug]]></commentInRDBMS>
+<generatorID>FB636064-70A0-3DDA-A6F6-9338B763853B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prescrip_line_cost" id="C6747230-2CA0-3C19-CAC7-CF8E19DDC754">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[line cost]]></commentInRDBMS>
+<generatorID>AEFBF544-D528-EEE5-AAA8-96F9BBF9E0D6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_id" id="7CE9D0C7-8E92-C65B-117A-3667C50C0E2D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:43:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>2851EB52-8208-38A4-875E-F764F7B13A0F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B855F61C-1C81-66D3-2153-3DE1C64B288D" referredColumn="63D6BA60-943F-29BB-0551-561BDF10E630"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="650B6617-0B9F-F506-4AE3-D96D459ECA65" name="PRESCRIPTION_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>E0406EFA-8FAA-DD2D-D9A6-B3C254BC32F5</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3175A8E-F46D-7D9D-1C22-26D8840B9F2D"/>
+<colUsage columnID="5CFEBC29-9135-2C54-96A3-1D9ABE0EAE7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AED4083-9B53-DF4C-A754-D452FFA46FCF" name="drug_prescription">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>67389BD0-E045-2F54-98B9-24888CEA7C1A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3175A8E-F46D-7D9D-1C22-26D8840B9F2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76D5815F-94CD-2A6D-557B-AC63FD1EEF8B" name="visit_prescription">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 07:21:55 UTC</createdTime>
+<generatorID>36D5A372-9F49-3773-FF72-225D1E2D30D5</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CFEBC29-9135-2C54-96A3-1D9ABE0EAE7E"/>
+<colUsage columnID="7CE9D0C7-8E92-C65B-117A-3667C50C0E2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

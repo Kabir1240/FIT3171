@@ -1,0 +1,258 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C37F349-2058-849F-6ED5-8A54E154FA0F" name="VISIT">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>D4857281-CEFC-3A0E-6B13-C6D2DDD12A80</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="visit_id" id="C40E6BCF-9AF6-B9F1-E76B-A63D5CA38B3D">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for visit]]></commentInRDBMS>
+<generatorID>C84842E2-6507-3201-9E4E-14A2A5C88F7A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_datetime" id="254335D9-5D12-164E-5B87-C987A667B7C6">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
+<generatorID>41FD7A68-39EA-E161-14C8-DECF562A68A0</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_id" id="BA7154A7-E1F6-5822-879B-8FC71F8ABDA6">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>74456942-103F-BDB1-F42A-F6070297BA9B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CBB2CD0-8155-904C-69B5-987622705BBE" referredColumn="39C27E71-B923-92B2-A424-55087CAC4615"/>
+</associations>
+</Column>
+<Column name="visit_pet_weight" id="34D4FFB0-EFD1-6743-918F-53EE23624EAE">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[weight of pet in visit]]></commentInRDBMS>
+<generatorID>1DD0A076-7E24-BAE9-AD56-84E0A85F638E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_length" id="7B179BE7-4221-A56C-2937-A55CFB943F14">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit length in minutes]]></commentInRDBMS>
+<generatorID>368D08A4-2AB5-5121-2A3B-0FE430D9B2E2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_notes" id="B51DD1E4-66C6-4A71-C237-2D6E5F539F4B">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[notes made by vet for visit]]></commentInRDBMS>
+<generatorID>11129760-830A-0394-8484-EA35910D5A81</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_total_amount" id="756977FC-6597-8472-78FF-E4937D3104AD">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[total cost of services in visit]]></commentInRDBMS>
+<generatorID>0C09CDB6-E5DA-CD72-29B2-78B20BC10DE7</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_payment_method" id="62BE09B0-D3AE-D489-CE6B-D2D07314AB05">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[method of payment (cash/EFT)]]></commentInRDBMS>
+<generatorID>A962750D-CEB7-A50B-4038-C93F24D176FA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<constraintName>chk_visit_pay_method</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description="CASH"/>
+<valueDef value="E" description="EFT"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_id" id="E2726270-AB41-CC70-6EE9-364F54AFFC3B">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique id of pet]]></commentInRDBMS>
+<generatorID>45155A01-8516-9382-508A-7956D1F02D78</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D372326F-2682-1BF6-4F68-C43AACC519F2" referredColumn="D68E18E6-C040-C6BE-4DF3-D5EE304A0704"/>
+</associations>
+</Column>
+<Column name="clinic_id" id="1565A8F2-A631-5589-807F-B2FAD3BF735A">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id, primary key]]></commentInRDBMS>
+<generatorID>C619A074-4AA2-0EF1-6D2C-181259236636</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C12454D-EFF6-F010-24C1-73687041101C" referredColumn="DC1C1285-A701-4293-C307-7A769807796D"/>
+</associations>
+</Column>
+<Column name="visit_followup" id="4826EDEB-028E-CA52-5BF2-26FE0AADE071">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for visit]]></commentInRDBMS>
+<generatorID>65A3CA9C-618F-0C54-0B64-ACEAB41C5664</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE47F1AF-4A86-A959-9999-26C530D7DA64" referredColumn="C40E6BCF-9AF6-B9F1-E76B-A63D5CA38B3D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E8F1EAB-DEDE-418A-8A6D-3CC4BBD56668" name="Visit_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>6CE6A325-7973-EEEB-4A86-3E773E0491EC</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C40E6BCF-9AF6-B9F1-E76B-A63D5CA38B3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE7A1825-D9A3-B70F-4D35-706BE5867A09" name="VISIT_NK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>DF01508F-61B0-A2E9-4275-AE1DD23AA439</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="254335D9-5D12-164E-5B87-C987A667B7C6"/>
+<colUsage columnID="BA7154A7-E1F6-5822-879B-8FC71F8ABDA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D8CD93-0766-9EC2-6E3D-2EB04884DDD8" name="VISIT__IDX">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3C379C12-7D7C-E120-DC5B-02DFB19920B4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4826EDEB-028E-CA52-5BF2-26FE0AADE071"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="576898A2-3E7B-AA4E-6C3A-F94D2DD312F4" name="clinic_visit">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>846E7C98-D162-2D59-12DE-7C15781F07A9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1565A8F2-A631-5589-807F-B2FAD3BF735A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B863AC2-3055-F9F1-633F-C677B765325D" name="pet_visit">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>7E9E049C-E18F-C870-F32E-9DC569D93569</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2726270-AB41-CC70-6EE9-364F54AFFC3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAEBBE16-C5EC-67FA-F129-AC2396CEAFFF" name="vet_visit">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>7BFADC04-5158-7987-89E2-69067B0A5513</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA7154A7-E1F6-5822-879B-8FC71F8ABDA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F788868-389E-5FF7-5E56-FC7EC2B0173B" name="visit_visit">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>3C379C12-7D7C-E120-DC5B-02DFB19920B4</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4826EDEB-028E-CA52-5BF2-26FE0AADE071"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

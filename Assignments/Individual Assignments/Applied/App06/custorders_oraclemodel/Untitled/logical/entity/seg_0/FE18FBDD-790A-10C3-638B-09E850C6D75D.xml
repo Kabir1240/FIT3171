@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE18FBDD-790A-10C3-638B-09E850C6D75D" name="PRODUCT">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:03:35 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="prod_no" id="1CB5DC38-4744-F2F3-BB02-F3B00B0C0C4B">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:05:33 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_desc" id="2F986A9F-C77F-CDC5-EC1F-473B23CA7EED">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:05:56 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_unitprice" id="088F6BCE-697D-52C6-B150-83A2EFFA9C97">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:06:11 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_category" id="FAE9C0F6-CBD8-AEFF-9F9E-C8700131E9F8">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:06:17 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<constraintName>ch_custlevel</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="811CD972-5BCF-BCA5-B6FE-9DD352CEBB18" name="PRODUCT_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:05:38 UTC</createdTime>
+<ownerDesignName>Untitled</ownerDesignName>
+<engineerTo>
+<item key="B812FC0E-EACD-0A7B-79B3-5B9C78EF6C63" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1CB5DC38-4744-F2F3-BB02-F3B00B0C0C4B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

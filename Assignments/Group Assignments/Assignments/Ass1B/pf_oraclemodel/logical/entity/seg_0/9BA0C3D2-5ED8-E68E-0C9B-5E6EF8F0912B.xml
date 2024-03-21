@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BA0C3D2-5ED8-E68E-0C9B-5E6EF8F0912B" name="PET">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-10 07:41:14 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="DDBF045C-BE1A-7DA2-B765-4FE4AE68594E">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-10 07:41:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique id of pet]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<importedID>EF799FA0-38D2-3B4F-824F-C26C539F911E</importedID>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_name" id="E5045507-8672-6EF8-FA78-3941D257AAAC">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-10 07:41:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of pet]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<importedID>A11B8AA0-1705-0C6D-DC3C-2D2FF71D630B</importedID>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_type" id="33A1C174-E4F3-35C0-E15B-25FDD3AFF66F">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-11 01:55:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of pet]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_birth_year" id="ABF851D8-9A2F-98E3-CDF0-EB447A9B8708">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-11 01:56:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet date of birth]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_id" id="216CCA62-9F53-9B64-7AC9-674BB0C7F782">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-11 02:21:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique id of owner]]></commentInRDBMS>
+<generatorID>C516F5D5-D71A-ACC2-6424-515BEAFF6580</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<referedAttribute>5EFAB163-4411-3A25-8F10-8D9418BBEBB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E7E8A0FE-8195-F6B9-55D9-42D4B124F550" name="Pet PK">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-10 07:41:14 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DDBF045C-BE1A-7DA2-B765-4FE4AE68594E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

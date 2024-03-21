@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21CC9A69-6650-7987-2692-5329E1876C53" name="SERVICE_ACCOUNT">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>95A1A036-3A8F-A76D-ECAA-73469B746B10</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="serv_code" id="8DF0EB50-92E1-1EEB-B9EE-26457CECD72B">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[service code]]></commentInRDBMS>
+<generatorID>111A19BF-BEFA-0EA7-0849-18F5928F46A7</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6024A332-4B10-ED10-07F2-EFD852D01C12" referredColumn="096F630E-181F-D451-D039-7E4B0BF7745D"/>
+</associations>
+</Column>
+<Column name="visit_id" id="1F4D97CD-1677-F882-BFB4-2AEA15CE0EBF">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for visit]]></commentInRDBMS>
+<generatorID>239B8CAB-CF17-605F-DA4D-DC3E467B9277</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C09E978E-61EA-0F4D-4C8A-21E0E8D0C489" referredColumn="C40E6BCF-9AF6-B9F1-E76B-A63D5CA38B3D"/>
+</associations>
+</Column>
+<Column name="serv_account_line_cost" id="C604DFAC-1290-D79B-F343-5657731A2DB5">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[price of service]]></commentInRDBMS>
+<generatorID>E021833F-A59E-B9FB-B3BF-DFB35FE69310</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5248B324-BE3E-2F70-89CE-284226196D67" name="VISIT_SERVICE_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>8370FE62-C2EF-C9BD-F10C-DFFF05C600B9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF0EB50-92E1-1EEB-B9EE-26457CECD72B"/>
+<colUsage columnID="1F4D97CD-1677-F882-BFB4-2AEA15CE0EBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AF9A0B6-E9C7-B5B9-A73D-835BC99896A5" name="service_vs">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>1B61470A-0EC9-D89C-FF65-BF23F217F428</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF0EB50-92E1-1EEB-B9EE-26457CECD72B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBBCA1C9-4BA3-2E10-A3FE-EA7D796B1B16" name="visit_vs">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-12 12:54:48 UTC</createdTime>
+<generatorID>0A386A7E-A6F5-4D43-E7EE-8BA2D6B3F59F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F4D97CD-1677-F882-BFB4-2AEA15CE0EBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

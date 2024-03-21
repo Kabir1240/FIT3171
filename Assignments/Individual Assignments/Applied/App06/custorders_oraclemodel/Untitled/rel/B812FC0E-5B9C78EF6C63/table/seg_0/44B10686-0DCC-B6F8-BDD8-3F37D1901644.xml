@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44B10686-0DCC-B6F8-BDD8-3F37D1901644" name="CUSTOMER">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<generatorID>9E79D9D4-D6BF-BBD9-7BF6-1B0F52220151</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cust_no" id="AB9E2DA2-A185-1A5A-0E4A-55FBA3B9DE1F">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer number]]></commentInRDBMS>
+<generatorID>0305E5FF-607C-1EEC-BD20-3DECD23B0CEA</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_name" id="EF173E67-FDBA-DE42-094F-CCF821A0CD09">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[customers name]]></commentInRDBMS>
+<generatorID>C9916087-09E6-1F06-B5CA-071122B16930</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_address" id="2DEF4A0F-E903-1B17-41AB-8682993487D4">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[customers address]]></commentInRDBMS>
+<generatorID>B23BB5CC-97EF-E9A0-28E6-14689311C2EB</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_phone" id="4D37D2BA-3997-BC92-9B61-A853730B6574">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[customers phone number]]></commentInRDBMS>
+<generatorID>0BD0B496-5AD0-03B2-EB2D-46F3F67123D3</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_level" id="C11F4A1F-0E66-6682-4EEA-731B9C5567F5">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer_level]]></commentInRDBMS>
+<generatorID>4D707CA3-5A6A-A9FE-8A39-EA3E78512984</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E6BB44E-29E6-27E0-D537-5C88B2B96DD1" name="CUSTOMER_PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-08-28 07:18:06 UTC</createdTime>
+<generatorID>2A9C5C0E-8242-5135-F854-862B98BF979A</generatorID>
+<ownerDesignName>Untitled</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB9E2DA2-A185-1A5A-0E4A-55FBA3B9DE1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

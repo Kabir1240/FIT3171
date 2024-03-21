@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8863BB9F-4F16-2D72-274D-B101DBE19901" name="TRAINING">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 00:55:42 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tr_id" id="56ADD2E9-A663-E262-6E15-56E09FAE5E39">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 00:57:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course  id]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tr_name" id="B4419176-6E23-FD68-E6D5-57A8D14C7EE0">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:00:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course name]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tr_duration" id="3C12E484-EC33-821A-F1E8-BBEDBCF731D9">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:00:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course  duration (in hh:mm)]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tr_date_time" id="56FCE3DB-1395-3814-F37F-0DBE641EAC3A">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:01:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[training course start date and time]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_id" id="02798113-1854-A700-B486-385223BF7334">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:32:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id, primary key]]></commentInRDBMS>
+<generatorID>6CB5D565-A89A-EE1E-722E-6866A3ABBEF6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<referedAttribute>B8BA49FC-EC9A-EDF9-D195-08623CEBB2E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="445CAE28-A092-9E88-942E-E633746ABF00">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 01:40:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>4EA65AD2-7C6C-4480-0642-D565C9E81658</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<referedAttribute>22A1A66F-A247-2050-DED4-4E5C3536EB98</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="179CEC04-F4F7-9B4E-3612-B2697EDE5402" name="TRAINING PK">
+<createdBy>kashi</createdBy>
+<createdTime>2023-09-10 00:57:48 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>56ADD2E9-A663-E262-6E15-56E09FAE5E39</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

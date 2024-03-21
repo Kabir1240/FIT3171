@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="pf_oraclemodel" id="F6BEE055-B69A-A3D7-F1B5-50079D6981BC" version="3.5">
+<createdBy>A03_Group023</createdBy>
+<createdTime>2023-09-10 00:15:59 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F6BEE055-B69A-A3D7-F1B5-50079D6981BC</designId>
+</OSDM_Design>

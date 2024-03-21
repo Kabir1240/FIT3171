@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="visit_vs" directorySegmentName="seg_0" id="0A386A7E-A6F5-4D43-E7EE-8BA2D6B3F59F">
+<createdBy>Admin</createdBy>
+<createdTime>2023-09-11 23:55:55 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="A4C9562F-8456-6F79-1CC3-94D2FABBEDDF" value="true"/>
+</engineerTo>
+<sourcePk>6CE6A325-7973-EEEB-4A86-3E773E0491EC</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has </nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D4857281-CEFC-3A0E-6B13-C6D2DDD12A80</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>95A1A036-3A8F-A76D-ECAA-73469B746B10</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
